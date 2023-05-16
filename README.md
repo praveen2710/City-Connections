@@ -11,9 +11,9 @@ jar can be found in  [target](https://github.com/praveen2710/City-Connections/tr
 `java -jar City-Connections-1.0-SNAPSHOT.jar <fileName> <cityOne> <cityTwo>`
 
 Args
-* <fileName> : a text file mentioning two connected cities in comma separated fashion
-* <cityOne> : The source city from which connection is being verified.
-* <cityTwo> : The destionation city which is being tried to reach.
+* `<fileName>` : a text file mentioning two connected cities in comma separated fashion
+* `<cityOne>` : The source city from which connection is being verified.
+* `<cityTwo>` : The destionation city which is being tried to reach.
 
 ## Examples 
 
@@ -33,3 +33,7 @@ Boston, New York
 * Used a BFS to find connection between two cities not connected directly.
 * If cityOne and cityTwo are same we will return a response without processing connections text file.
 * If two cities in question are connected directly we stop processing of connection file as soon as it is found since further processing of text file is not required
+
+### TODO future improvement
+* Add logging 
+* As it stands this needs to process connections text file to check conneciton between every two cities. Make changes such that we only need to process file once and verify multiple pair of cities.
